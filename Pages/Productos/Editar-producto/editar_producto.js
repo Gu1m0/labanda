@@ -7,7 +7,7 @@ liveInput.clickIconoBuscador();
 const cardsContainer = document.querySelectorAll(".cards-container");
 cardsContainer.forEach((categoria) => {
   fetch(
-    `https://json-server-db2.onrender.com/productos?categoria=${categoria.id}`
+    `https://json-server-db3.onrender.com/productos?categoria=${categoria.id}`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -67,7 +67,7 @@ setTimeout(() => {
         el.addEventListener("click", () => {
           cardsContainer.forEach((categoria) => {
             fetch(
-              `https://json-server-db2.onrender.com/productos/${cardToDelete.id}`,
+              `https://json-server-db3.onrender.com/productos/${cardToDelete.id}`,
               {
                 method: "DELETE",
               }

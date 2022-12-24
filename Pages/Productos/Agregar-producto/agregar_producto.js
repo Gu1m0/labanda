@@ -14,7 +14,7 @@ const crearProducto = () => {
   let descripcion = document.querySelector("[data-producto-descripcion]").value;
   let id = crearID(20);
 
-  fetch(`https://json-server-db2.onrender.com/productos?categoria=${categoria}`, {
+  fetch(`https://json-server-db3.onrender.com/productos?categoria=${categoria}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -97,7 +97,7 @@ const tomarSeccionUrl = () => {
 
 //llena la data de los inputs tomando el ID con Json para editar producto
 const llenaDataInput = () => {
-  fetch(`https://json-server-db2.onrender.com/productos/${tomarIDUrl()}`)
+  fetch(`https://json-server-db3.onrender.com/productos/${tomarIDUrl()}`)
     .then((res) => res.json())
     .then((data) => {
       let productName = document.querySelector("[data-producto-name]");
@@ -122,7 +122,7 @@ const udpateJson = () => {
   let categoria = document.querySelector("[data-select-seccion]").value;
   let descripcion = document.querySelector("[data-producto-descripcion]").value;
 
-  fetch(`https://json-server-db2.onrender.com/productos/${tomarIDUrl()}`, {
+  fetch(`https://json-server-db3.onrender.com/productos/${tomarIDUrl()}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ productName, precio, img, descripcion, categoria }),
