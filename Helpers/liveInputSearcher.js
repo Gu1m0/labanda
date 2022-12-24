@@ -39,7 +39,7 @@ const tomarLiveInput = () => {
       divSearchBarItems.innerHTML = "";
       loginButton.classList.remove("invisible");
       loginButton.classList.add("visible");
-    }, 100);
+    }, 200);
   });
 
   inputSearchBar.addEventListener("focus", () => {
@@ -56,12 +56,14 @@ const tomarLiveInput = () => {
 
       let inputValueMayus = e.target.value.toUpperCase();
       if (elMayus.includes(inputValueMayus) && e.target.value.length > 0) {
-        divSearchBarItems.innerHTML += `<div class="item-searchBar" id="${el.id}" data-categoria="${el.categoria}">
+        divSearchBarItems.innerHTML += `
+         <div class="item-searchBar" id="${el.id}" data-categoria="${el.categoria}">
           <div>
-           <img src="${el.img}" alt="" width="40" height="40"/>
+           <img src="${el.fotoPerfil}" alt="" width="40" height="40"/>
           </div>
            <div>
-            <span>${el.nombre}</span>
+            <span>${el.nombre} 
+            ${el.apellido}</span>
            </div>
          </div>
         `;

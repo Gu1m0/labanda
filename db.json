@@ -1,6 +1,18 @@
 {
   "users": [
     {
+      "id": "3aes1ajiqdgh3irxc24r",
+      "nombre": "Guillermo Eze",
+      "apellido": "Capo",
+      "fotoPerfil": "https://i.imgur.com/amsBWxn.jpeg",
+      "edad": "30",
+      "correo": "guillermocapo@gmail.com",
+      "password": "guillermocapo123",
+      "rol": "admin",
+      "descripcion": "éste vaguito es el ADMIN",
+      "categoria": "starwars"
+    },
+    {
       "id": "7ceh3akiqcghuir1cc4r",
       "nombre": "José Miguel",
       "apellido": "Rodriguez",
