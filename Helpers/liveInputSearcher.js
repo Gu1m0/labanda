@@ -4,14 +4,17 @@ const tomarLiveInput = () => {
   const searchBar = document.querySelector(".matchSearch");
   const loginButton = document.querySelector(".nav__menu-btn");
 
-  fetch(`https://json-server-db3.onrender.com/productos`)
+  fetch(`https://json-server-db3.onrender.com/users`)
     .then((res) => res.json())
     .then((data) => {
       data.forEach((el) =>
         nombresTodosProductos.push({
           id: el.id,
-          nombre: el.productName,
-          img: el.img,
+          nombre: el.nombre,
+          apellido: el.apellido,
+          edad: el.edad,
+          correo: el.correo,
+          fotoPerfil: el.fotoPerfil,
           categoria: el.categoria,
           descripcion: el.descripcion,
         })

@@ -928,15 +928,15 @@ form div button {
 }
 
 form div button:hover {
-  transform: rotate(1deg);
-  transform-origin: 1650% -100%;
+  /* transform: rotate(1deg);
+  transform-origin: 1650% -100%; */
   background-color: #2a7ae4;
   color: #fff;
-  position: absolute;
+  /* position: absolute;
   height: 270px;
-  width: 100%;
+  width: 100%; */
   border-radius: 10%;
-  font-size: 1.5625rem;
+  /* font-size: 1.5625rem; */
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
