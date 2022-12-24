@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../styles.css"/>
+    <link rel="stylesheet" href="agregar_producto.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Agregar Productos</title>
+</head>
+<body>
+
+    <!--Nav menu-->
+    <nav>
+      <div class="nav__menu">
+        <div class="nav__menu-img">
+          <a href="../../../index.html"
+            ><img src="../../../Assets/Imgs/Logo.png" width="150" height="50" alt="logo"
+          /></a>
+        </div>
+        <div class="search-Y-matchs">
+          <div class="nav__menu-search">
+            <input
+              type="search"
+              name=""
+              id="searchBar"
+              placeholder="¿Qué deseas buscar?"
+            />
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+          <div class="matchSearch"></div>
+        </div>
+        <div class="nav__menu-btn">
+          <a href="../Editar-producto/editar_producto.html"><button>Menú Administrador</button></a>
+        </div>
+      </div>
+    </nav>
+
+      <!--Carga de productos-->
+      <section class="carga-producto">
+        <div class="carga-producto__container">
+            <h2>Agregar nuevo producto</h2>
+            <div class="url-img">
+                <label for="url-img">URL de imagen</label>
+                <input type="text" name="" id="url-img" placeholder="ej: https://URLimagen.com/producto.png" required data-producto-url>
+            </div>
+            <div class="categoria">
+                <label for="selector">Categoría</label>
+               <select name="" id="selector" data-select-seccion>
+                <option value="starwars" selected>Stars Wars</option>
+                <option value="consolas">Consolas</option>
+                <option value="diversos">Diversos</option>
+               </select>
+            </div>
+            <div class="nombre-prod">
+                <label for="prod-name">Nombre del producto</label>
+                <input type="text" name="" id="prod-name" placeholder="Producto XYZ" required data-producto-name>
+            </div>
+            <div class="precio-prod">
+                <label for="precio">Precio del producto</label>
+                <input type="text" name="" id="precio" placeholder="Precio $" data-producto-precio
+                required>
+            </div>
+            <div class="descrip-prod">
+                <textarea name="" id="" cols="30" rows="3" placeholder="Descripción del producto" required data-producto-descripcion></textarea >
+            </div>
+            <div class="btn-agregar">
+                <button data-boton-form>Agregar producto</button>
+            </div>
+        </div>
+      </section>
+
+      <!--Formulario-->
+      <section class="logoForm">
+        <div class="logoForm-container">
+          <div class="logo-links">
+            <div class="logo-bottom">
+              <img src="../../../Assets/Imgs/Logo.png" alt="logo-bottom" />
+            </div>
+            <div class="lista-links">
+              <ul>
+                <li><a href="">Quienes somos</a></li>
+                <li><a href="">Política de privacidad</a></li>
+                <li><a href="">Programa de fidelidad</a></li>
+                <li><a href="">Nuestras Tiendas</a></li>
+                <li><a href="">Quiero ser franquiciado</a></li>
+                <li><a href="">Anuncie aquí</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="formulario">
+            <form action="">
+              <h3>Hable con nosotros</h3>
+              <div>
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  name=""
+                  id="nombre"
+                  placeholder="Escribe tu nombre"
+                />
+              </div>
+              <div>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="5"
+                  placeholder="Escribe tu mensaje"
+                ></textarea>
+              </div>
+              <div>
+                <button>Enviar mensaje</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <footer>
+        <div>
+          <marquee scrolldelay="400" behavior="Alternate" direction=""
+            >&copy;&nbsp;Desarrollado por Pepe Hongo <br />
+            <pre>            2022</pre>
+          </marquee>
+        </div>
+      </footer>
+
+ <script type="module" src="agregar_producto.js"></script>
+</body>
+</html>

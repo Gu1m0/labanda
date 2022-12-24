@@ -1,0 +1,142 @@
+body{
+    background: none;
+}
+
+.nav__menu-btn {
+  visibility: hidden;
+}
+
+.nav__menu-img{
+    order: 0;
+  }
+
+.productos__btn-bar {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background: #2A7AE4;
+  padding: 16px;
+  transition: all .3s;
+}
+
+.productos__btn-bar:hover {
+    background-color: white;
+    color: #2A7AE4;
+}
+
+.cards-container {
+    transform: rotatex(0deg);
+    overflow-y: visible;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 1.5rem;
+    max-height: 500px;
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(0.25turn, #06fbeb, #22bb36);
+    border-radius: 0%;
+  }
+
+  .cards-container::-webkit-scrollbar-track {
+    background-color: rgb(188, 187, 187);
+    border-radius: 0%;
+  }
+
+.card {
+    position: relative;
+    height: 40%;
+    padding-top: 15px;
+    /* scroll-snap-align: start; */ 
+    transform: rotatex(0deg);
+}
+
+.editors{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+.trasher,.pen{
+    padding: 6px;   
+    margin: 4px;
+    font-size: 19px; 
+    color: white;
+    background-color: rgba(0, 255, 106, 0.395);
+    border-radius: 20px;
+}
+
+.trasher:hover,.pen:hover{
+    cursor: pointer;
+    /* background-color: blue; */
+}
+
+.trasher i:hover,.pen i:hover{
+    /* outline: 1px solid red; */
+    scale: 1.3;
+    background-color: blue;
+    animation: shake2 .8s 1 linear;
+}
+
+.pen i:hover{
+    background-color: rgb(255, 0, 0);
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+
+.divEmerg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+
+.alertaDel{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    /* height: 25%; */
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.722);
+}
+
+.alertaDel span{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    padding: 6px;
+    color: white;
+}
+
+.alertaDel button{
+    padding: 3px;
+    border-radius: 100px;
+
+}
+
+.alertaDel button:first-of-type{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.card .img-name:hover {
+    scale: none;
+  }
+
+
+  @media (max-width:500px) {
+    .card {
+        width: 105px;
+    }
+  }

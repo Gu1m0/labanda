@@ -1,0 +1,147 @@
+{
+  "Users": [
+    {
+      "id": "7ceh3akiqcghuir1cc4r",
+      "nombre": "José Miguel",
+      "apellido": "Rodriguez",
+      "fotoPerfil": "https://i.imgur.com/fbuPISF.png",
+      "edad": "30",
+      "correo": "joserodriguez@gmail.com",
+      "password": "joserodriguez123",
+      "rol": "user",
+      "descripcion": "éste vaguito está reloco"
+    },
+    {
+      "id": "n9dyl73x4hwc4en6ijo6",
+      "nombre": "Pedro Raul",
+      "apellido": "Jimenez",
+      "fotoPerfil": "https://i.imgur.com/wzL62on.png",
+      "edad": "30",
+      "correo": "pedrojimenez@gmail.com",
+      "password": "pedrojimenez123",
+      "rol": "user",
+      "descripcion": "éste vaguito está reloco"
+    },
+    {
+      "id": "iieakidjr9l926nam0z6",
+      "nombre": "Anibal Ricardo",
+      "apellido": "Castro",
+      "fotoPerfil": "https://i.imgur.com/5e2FXMy.png",
+      "edad": "30",
+      "correo": "anibalcastro@gmail.com",
+      "password": "anibalcastro123",
+      "rol": "user",
+      "descripcion": "éste vaguito está reloco"
+    },
+    {
+      "id": "6vk11p7mb2f8kg65plz2",
+      "nombre": "Guillermo Erwin",
+      "apellido": "Castro",
+      "fotoPerfil": "https://i.imgur.com/m9gChyj.png",
+      "edad": "30",
+      "correo": "guillermocastro@gmail.com",
+      "password": "guillermocastro123",
+      "rol": "user",
+      "descripcion": "éste vaguito está reloco"
+    },
+    {
+      "id": "5ti4dkb9uwgtkx9x999u",
+      "nombre": "Samuel Julian",
+      "apellido": "Alvarez",
+      "fotoPerfil": "https://i.imgur.com/amsBWxn.jpeg",
+      "edad": "30",
+      "correo": "samuelalvarez@gmail.com",
+      "password": "samuelalvarez123",
+      "rol": "user",
+      "descripcion": "éste vaguito está reloco"
+    },
+    {
+      "id": "zbby7q1xpnixa1x0f5q6",
+      "nombre": "Santiago",
+      "apellido": "Jerez",
+      "fotoPerfil": "https://i.imgur.com/PDV8tYQ.jpeg",
+      "edad": "30",
+      "correo": "santiagojerez@gmail.com",
+      "password": "santiagojerez123",
+      "rol": "user",
+      "descripcion": "éste vaguito está reloco"
+    },
+    {
+      "id": "9bfz2v50hmnezolbl1jy",
+      "nombre": "Romina Maria",
+      "apellido": "Lazarte",
+      "fotoPerfil": "https://i.imgur.com/f2dVZ5L.jpeg",
+      "edad": "30",
+      "correo": "rominalazarte@gmail.com",
+      "password": "rominalazarte123",
+      "rol": "user",
+      "descripcion": "éste vaguito está reloco"
+    },
+    {
+      "id": "qq8j6rr7v52dyvjh088r",
+      "nombre": "Tomas Eber",
+      "apellido": "Ludueña",
+      "fotoPerfil": "https://i.imgur.com/J9r12yz.jpeg",
+      "edad": "30",
+      "correo": "tomasludueña@gmail.com",
+      "password": "tomasludueña123",
+      "rol": "user",
+      "descripcion": "éste vaguito está reloco"
+    },
+    {
+      "id": "e7o6ievbl6kkojv35z0z",
+      "nombre": "Martin Marcos",
+      "apellido": "Solorzano",
+      "fotoPerfil": "https://i.imgur.com/N98DoC8.png",
+      "edad": "30",
+      "correo": "martinsolorzano@gmail.com",
+      "password": "martinsolorzano123",
+      "rol": "user",
+      "descripcion": "éste vaguito está reloco"
+    },
+    {
+      "id": "ah3ahpls744ewqxdd1st",
+      "nombre": "Paula",
+      "apellido": "Fernandez",
+      "fotoPerfil": "https://i.imgur.com/XaELzoc.jpeg",
+      "edad": "30",
+      "correo": "paulafernandez@gmail.com",
+      "password": "paulafernandez123",
+      "rol": "user",
+      "descripcion": "éste vaguito está reloco"
+    },
+    {
+      "id": "8ujvwipaizhiu19077zh",
+      "nombre": "Judith",
+      "apellido": "Romero",
+      "fotoPerfil": "https://i.imgur.com/t1IN1bA.jpeg",
+      "edad": "30",
+      "correo": "judithromero@gmail.com",
+      "password": "judithromero123",
+      "rol": "user",
+      "descripcion": "éste vaguito está reloco"
+    },
+    {
+      "id": "izxqywmuq4r1vn3uw3qe",
+      "nombre": "Lionel Andres",
+      "apellido": "Messi",
+      "fotoPerfil": "https://i.imgur.com/FXfWcty.jpeg",
+      "edad": "30",
+      "correo": "lionelmessi@gmail.com",
+      "password": "lionelmessi123",
+      "rol": "user",
+      "descripcion": "éste vaguito está reloco"
+    },
+    {
+      "id": "0eapqam1ipkhza0diduw",
+      "nombre": "Diego Armando",
+      "apellido": "Maradona",
+      "fotoPerfil": "https://i.imgur.com/dkyWIjS.png",
+      "edad": "30",
+      "correo": "diegomaradona@gmail.com",
+      "password": "diegomaradona123",
+      "rol": "user",
+      "descripcion": "éste vaguito está reloco"
+    }
+  ]
+}

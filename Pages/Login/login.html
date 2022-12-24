@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="login.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      "
+    >
+      <!--Nav menu-->
+      <nav>
+        <div class="nav__menu">
+          <div class="nav__menu-img">
+            <a href="../../index.html"
+              ><img
+                src="../../Assets/Imgs/bandalogo.png"
+                width="150"
+                height="50"
+                alt="logo"
+            /></a>
+          </div>
+          <div class="search-Y-matchs">
+            <div class="nav__menu-search">
+              <input
+                type="search"
+                name=""
+                id="searchBar"
+                placeholder="¿Qué deseas buscar?"
+              />
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="matchSearch"></div>
+          </div>
+          <div class="nav__menu-btn">
+            <a href=""><button>Login</button></a>
+          </div>
+        </div>
+      </nav>
+
+      <!--Inicio de sesion-->
+      <section class="iniSesion">
+        <div class="iniSesion-container">
+          <form action="">
+            <h2>Iniciar Sesión</h2>
+            <div>
+              <input
+                class="correoInput"
+                type="text"
+                name=""
+                id=""
+                placeholder="Escriba su correo electrónico"
+              />
+            </div>
+            <div>
+              <input
+                class="passwordInput"
+                type="password"
+                name=""
+                id=""
+                placeholder="Escriba su contraseña"
+              />
+            </div>
+            <div>
+              <button class="buttonForm" type="button">Entrar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!--Formulario-->
+      <div style="height: 200px">
+        <section class="logoForm">
+          <div class="logoForm-container">
+            <div class="logo-links">
+              <div class="logo-bottom">
+                <img src="../../Assets/Imgs/bandalogo.png" alt="logo-bottom" />
+              </div>
+              <div class="lista-links">
+                <ul>
+                  <li><a href="">Quienes somos</a></li>
+                  <li><a href="">Política de privacidad</a></li>
+                  <li><a href="">Programa de fidelidad</a></li>
+                  <li><a href="">Nuestras Tiendas</a></li>
+                  <li><a href="">Quiero ser franquiciado</a></li>
+                  <li><a href="">Anuncie aquí</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="formulario">
+              <form action="">
+                <h3>Hable con nosotros</h3>
+                <div>
+                  <label for="nombre">Nombre</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="nombre"
+                    placeholder="Escribe tu nombre"
+                  />
+                </div>
+                <div>
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="5"
+                    placeholder="Escribe tu mensaje"
+                  ></textarea>
+                </div>
+                <div>
+                  <button>Enviar mensaje</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!--Footer-->
+        <footer>
+          <div>
+            <marquee scrolldelay="400" behavior="Alternate" direction=""
+              >&copy;&nbsp;Desarrollado por Pepe Hongo <br />
+              <pre>            2022</pre>
+            </marquee>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script type="module" src="login.js"></script>
+  </body>
+</html>
