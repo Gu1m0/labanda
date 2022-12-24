@@ -140,7 +140,7 @@ if (window.location.href.includes("id=")) {
   const botonForm = document.querySelector("[data-boton-form]");
   botonForm.addEventListener("click", () => {
     udpateJson();
-    swal("Producto actualizado", "", "success");
+    swal("Usuario actualizado", "", "success");
     setTimeout(() => {
       window.location.href =
         "../Editar-producto/editar_producto.html";
@@ -162,10 +162,10 @@ botonAgregarProd.addEventListener("click", (e) => {
   setTimeout(() => {
     crearProducto();
   }, 1500);
-  swal("Producto agregado correctamente", "", "success");
+  swal("Usuario agregado correctamente", "", "success");
 }else
   swal(
-    "Producto no agregado",
+    "Usuario no agregado",
     "Debes rellenar los campos faltantes",
     "error"
   );

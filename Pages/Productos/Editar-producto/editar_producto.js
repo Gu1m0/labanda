@@ -80,7 +80,7 @@ setTimeout(() => {
                 let modal = document.querySelector(".swal-overlay");
                 modal.classList.remove("swal-overlay--show-modal");
               }, 2000);
-              swal("Producto eliminado con Éxito", "", "success");
+              swal("Usuario eliminado con Éxito", "", "success");
             });
           });
         });
