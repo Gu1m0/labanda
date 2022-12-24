@@ -139,7 +139,7 @@ fetch(`https://json-server-db3.onrender.com/users?categoria=${tomarSeccionUrl()}
        </div>
       <div class="precio-link">
         <p class="p-precio">Edad: ${el.edad}</p>
-        <a>Ver producto</a>
+        <a>Ver usuario</a>
       </div>
    </div>
     `;})

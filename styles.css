@@ -125,8 +125,8 @@
     background: linear-gradient(
       90deg,
       rgba(2, 0, 36, 0) 0%,
-      rgba(9, 9, 121, 1) 25%,
-      rgba(9, 9, 121, 1) 75%,
+      rgb(9, 121, 50) 25%,
+      rgb(9, 121, 50) 75%,
       rgba(9, 9, 121, 0) 100%
     );
     flex-wrap: wrap;
@@ -165,7 +165,7 @@
   }
   
   .nav__menu-search:focus-within {
-    outline: 2px solid blue;
+    outline: 2px solid #07a15c;
   }
   
   .nav__menu-search input {
@@ -224,13 +224,13 @@
   
   .nav__menu-btn button {
     padding: 16px 70px;
-    border: 1px solid #2a7ae4;
+    border: 1px solid #07a15c;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
     line-height: 19px;
-    color: #2a7ae4;
+    color: #07a15c;
     background-color: transparent;
     transition: all 0.4s;
   }
@@ -437,7 +437,7 @@
     line-height: 19px;
     padding: 16px;
     color: #ffffff;
-    background: #2a7ae4;
+    background: #07a15c;
     border: none;
   }
   
@@ -448,9 +448,9 @@
   form div button:hover {
     /* transform: rotate(1deg);
     transform-origin: 1650% -100%; */
-    /* background-color: #2a7ae4;
+    /* background-color: #07a15c;
     color: #fff; */
-    color: #2a7ae4;
+    color: #07a15c;
     background-color:#ffffff ;
     /* position: absolute; */
     /* height: 270px; */
@@ -530,12 +530,12 @@ article section {
   font-weight: 700;
   font-size: 1rem;
   line-height: 19px;
-  color: #2a7ae4;
+  color: #07a15c;
 }
 
 .productos__bar div span {
   font-size: 1rem;
-  color: #2a7ae4;
+  color: #07a15c;
 }
 
 .cards-container {
@@ -716,7 +716,7 @@ article section {
   font-weight: 700;
   font-size: 1rem;
   line-height: 19px;
-  color: #2a7ae4;
+  color: #07a15c;
   text-decoration: none;
 }
 
@@ -919,7 +919,7 @@ form div:nth-child(4) button {
   line-height: 19px;
   padding: 16px;
   color: #ffffff;
-  background: #2a7ae4;
+  background: #07a15c;
   border: none;
 }
 
@@ -930,7 +930,7 @@ form div button {
 form div button:hover {
   /* transform: rotate(1deg);
   transform-origin: 1650% -100%; */
-  background-color: #2a7ae4;
+  background-color: #07a15c;
   color: #fff;
   /* position: absolute;
   height: 270px;
@@ -1146,7 +1146,7 @@ footer div marquee {
 
   .hero__text h1{
     font-size: 42px;
-    text-shadow: 0 0 10px #2a7ae4;
+    text-shadow: 0 0 10px #07a15c;
   }
   .hero__text p{
     font-size: 17px;
