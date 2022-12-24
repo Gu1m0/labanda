@@ -53,9 +53,11 @@ const tomarLiveInput = () => {
   inputSearchBar.addEventListener("input", (e) => {
     nombresTodosProductos.map((el) => {
       let elMayus = el.nombre.toUpperCase();
+      let elMayusApe = el.apellido.toUpperCase();
+
 
       let inputValueMayus = e.target.value.toUpperCase();
-      if (elMayus.includes(inputValueMayus) && e.target.value.length > 0) {
+      if ((elMayus.includes(inputValueMayus)||elMayusApe.includes(inputValueMayus)) && e.target.value.length > 0) {
         divSearchBarItems.innerHTML += `
          <div class="item-searchBar" id="${el.id}" data-categoria="${el.categoria}">
           <div>

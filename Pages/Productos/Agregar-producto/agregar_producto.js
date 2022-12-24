@@ -7,21 +7,23 @@ const botonAgregarProd = document.querySelector("[data-boton-form]");
 
 //agregar Producto -- POST method
 const crearProducto = () => {
-  let productName = document.querySelector("[data-producto-name]").value;
-  let precio = document.querySelector("[data-producto-precio]").value;
-  let img = document.querySelector("[data-producto-url]").value;
+  let nombre = document.querySelector("[data-producto-name]").value;
+  let apellido = document.querySelector("[data-producto-ape]").value;
+  let edad = document.querySelector("[data-producto-precio]").value;
+  let fotoPerfil = document.querySelector("[data-producto-url]").value;
   let categoria = document.querySelector("[data-select-seccion]").value;
   let descripcion = document.querySelector("[data-producto-descripcion]").value;
   let id = crearID(20);
 
-  fetch(`https://json-server-db3.onrender.com/productos?categoria=${categoria}`, {
+  fetch(`https://json-server-db3.onrender.com/users?categoria=${categoria}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       id,
-      productName,
-      precio,
-      img,
+      nombre,
+      apellido,
+      edad,
+      fotoPerfil,
       descripcion,
       categoria,
     }),
@@ -97,35 +99,38 @@ const tomarSeccionUrl = () => {
 
 //llena la data de los inputs tomando el ID con Json para editar producto
 const llenaDataInput = () => {
-  fetch(`https://json-server-db3.onrender.com/productos/${tomarIDUrl()}`)
+  fetch(`https://json-server-db3.onrender.com/users/${tomarIDUrl()}`)
     .then((res) => res.json())
     .then((data) => {
-      let productName = document.querySelector("[data-producto-name]");
-      let precio = document.querySelector("[data-producto-precio]");
-      let img = document.querySelector("[data-producto-url]");
+      let nombre = document.querySelector("[data-producto-name]");
+      let edad = document.querySelector("[data-producto-precio]");
+      let apellido = document.querySelector("[data-producto-ape]");
+      let fotoPerfil = document.querySelector("[data-producto-url]");
       let categoria = document.querySelector("[data-select-seccion]");
       let descripcion = document.querySelector("[data-producto-descripcion]");
       // categoria.setAttribute("disabled", "true"); //deshabilita boton select category
       categoria.value = tomarSeccionUrl();
-      productName.value = data.productName;
-      precio.value = data.precio;
-      img.value = data.img;
+      nombre.value = data.nombre;
+      apellido.value = data.apellido;
+      edad.value = data.edad;
+      fotoPerfil.value = data.fotoPerfil;
       descripcion.value = data.descripcion;
     });
 };
 
 //Update data --- PUT method
 const udpateJson = () => {
-  let productName = document.querySelector("[data-producto-name]").value;
-  let precio = document.querySelector("[data-producto-precio]").value;
-  let img = document.querySelector("[data-producto-url]").value;
+  let nombre = document.querySelector("[data-producto-name]").value;
+  let apellido = document.querySelector("[data-producto-ape]").value;
+  let edad = document.querySelector("[data-producto-precio]").value;
+  let fotoPerfil = document.querySelector("[data-producto-url]").value;
   let categoria = document.querySelector("[data-select-seccion]").value;
   let descripcion = document.querySelector("[data-producto-descripcion]").value;
 
-  fetch(`https://json-server-db3.onrender.com/productos/${tomarIDUrl()}`, {
+  fetch(`https://json-server-db3.onrender.com/users/${tomarIDUrl()}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ productName, precio, img, descripcion, categoria }),
+    body: JSON.stringify({ nombre,apellido, edad, fotoPerfil, descripcion, categoria }),
   });
 };
 
@@ -146,11 +151,12 @@ if (window.location.href.includes("id=")) {
 //-sino que cree un producto Nuevo en clck button
 botonAgregarProd.addEventListener("click", (e) => {
 
-  let productName = document.querySelector("[data-producto-name]").value;
-  let precio = document.querySelector("[data-producto-precio]").value;
-  let img = document.querySelector("[data-producto-url]").value;
+  let nombre = document.querySelector("[data-producto-name]").value;
+  let apellido = document.querySelector("[data-producto-ape]").value;
+  let edad = document.querySelector("[data-producto-precio]").value;
+  let fotoPerfil = document.querySelector("[data-producto-url]").value;
 
-  if (productName!=""&&precio!=""&&img!="") {
+  if (nombre!=""&&edad!=""&&fotoPerfil!=""&&apellido!="") {
     
   
   setTimeout(() => {

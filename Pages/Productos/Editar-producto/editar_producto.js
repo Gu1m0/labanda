@@ -7,7 +7,7 @@ liveInput.clickIconoBuscador();
 const cardsContainer = document.querySelectorAll(".cards-container");
 cardsContainer.forEach((categoria) => {
   fetch(
-    `https://json-server-db3.onrender.com/productos?categoria=${categoria.id}`
+    `https://json-server-db3.onrender.com/users?categoria=${categoria.id}`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -20,12 +20,12 @@ cardsContainer.forEach((categoria) => {
       </div>
       <div class="img-name">
       <div class="card-img">
-      <img src="${el.img}" />
+      <img src="${el.fotoPerfil}" />
       </div>
-      <p class="p-productName">${el.productName}</p>
+      <p class="p-productName">${el.nombre} ${el.apellido}</p>
       </div>
       <div class="precio-link">
-      <p class="p-precio">$${el.precio}</p>
+      <p class="p-precio">Edad: ${el.edad}</p>
       </div>
       </div>
         `;
@@ -67,7 +67,7 @@ setTimeout(() => {
         el.addEventListener("click", () => {
           cardsContainer.forEach((categoria) => {
             fetch(
-              `https://json-server-db3.onrender.com/productos/${cardToDelete.id}`,
+              `https://json-server-db3.onrender.com/users/${cardToDelete.id}`,
               {
                 method: "DELETE",
               }

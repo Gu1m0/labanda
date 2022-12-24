@@ -50,30 +50,34 @@
       <!--Carga de productos-->
       <section class="carga-producto">
         <div class="carga-producto__container">
-            <h2>Agregar nuevo producto</h2>
+            <h2>Agregar nuevo usuario</h2>
             <div class="url-img">
-                <label for="url-img">URL de imagen</label>
-                <input type="text" name="" id="url-img" placeholder="ej: https://URLimagen.com/producto.png" required data-producto-url>
+                <label for="url-img">URL de imagen perfil</label>
+                <input type="text" name="" id="url-img" placeholder="ej: https://URLimagen.com/user.png" required data-producto-url>
             </div>
             <div class="categoria">
                 <label for="selector">Categoría</label>
                <select name="" id="selector" data-select-seccion>
-                <option value="starwars" selected>Stars Wars</option>
-                <option value="consolas">Consolas</option>
-                <option value="diversos">Diversos</option>
+                <option value="starwars" selected>Users 1</option>
+                <option value="consolas">Users 2</option>
+                <option value="diversos">Users 3</option>
                </select>
             </div>
             <div class="nombre-prod">
-                <label for="prod-name">Nombre del producto</label>
-                <input type="text" name="" id="prod-name" placeholder="Producto XYZ" required data-producto-name>
+                <label for="prod-name">Nombre del usuario</label>
+                <input type="text" name="" id="prod-name" placeholder="Nombre user" required data-producto-name>
             </div>
+            <div class="apellido-user">
+              <label for="user-ape">Apellido del usuario</label>
+              <input type="text" name="" id="prod-ape" placeholder="Apellido user" required data-producto-ape>
+          </div>
             <div class="precio-prod">
-                <label for="precio">Precio del producto</label>
-                <input type="text" name="" id="precio" placeholder="Precio $" data-producto-precio
+                <label for="precio">Edad del Usuario</label>
+                <input type="text" name="" id="precio" placeholder="Edad (solo numeros)" data-producto-precio
                 required>
             </div>
             <div class="descrip-prod">
-                <textarea name="" id="" cols="30" rows="3" placeholder="Descripción del producto" required data-producto-descripcion></textarea >
+                <textarea name="" id="" cols="30" rows="3" placeholder="Descripción del usuario" required data-producto-descripcion></textarea >
             </div>
             <div class="btn-agregar">
                 <button data-boton-form>Agregar producto</button>

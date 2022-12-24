@@ -134,6 +134,10 @@ body{
     scale: none;
   }
 
+  footer{
+    height: auto;
+  }
+
 
   @media (max-width:500px) {
     .card {
