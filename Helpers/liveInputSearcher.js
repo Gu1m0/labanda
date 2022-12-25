@@ -73,7 +73,7 @@ const tomarLiveInput = () => {
           elem.addEventListener("click", function clickeo(e) {
 
             // })
-            window.location.href = `http://localhost:5500/Pages/Productos/Vista-producto/vista_producto.html?id=${this.id}&categoria=${this.dataset.categoria}`; //this se usa acá para que tome todo el elemento el click, siosi en function() nombrada, no anonima xq con e.target solo trae el elemento, el this, es mas global
+            window.location.href = `https://gu1m0.github.io/labanda/Pages/Productos/Vista-producto/vista_producto.html?id=${this.id}&categoria=${this.dataset.categoria}`; //this se usa acá para que tome todo el elemento el click, siosi en function() nombrada, no anonima xq con e.target solo trae el elemento, el this, es mas global
           })
         );
 
