@@ -4,7 +4,7 @@ const tomarLiveInput = () => {
   const searchBar = document.querySelector(".matchSearch");
   const loginButton = document.querySelector(".nav__menu-btn");
 
-  fetch(`https://json-server-db3.onrender.com/users`)
+  fetch(`https://json-server-db4.onrender.com/users`)
     .then((res) => res.json())
     .then((data) => {
       data.forEach((el) =>

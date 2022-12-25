@@ -18,7 +18,7 @@ const crearProducto = () => {
   let rol = document.querySelector("[data-producto-rol]").value;
   let id = crearID(20);
 
-  fetch(`https://json-server-db3.onrender.com/users?categoria=${categoria}`, {
+  fetch(`https://json-server-db4.onrender.com/users?categoria=${categoria}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -105,7 +105,7 @@ const tomarSeccionUrl = () => {
 
 //llena la data de los inputs tomando el ID con Json para editar producto
 const llenaDataInput = () => {
-  fetch(`https://json-server-db3.onrender.com/users/${tomarIDUrl()}`)
+  fetch(`https://json-server-db4.onrender.com/users/${tomarIDUrl()}`)
     .then((res) => res.json())
     .then((data) => {
       let nombre = document.querySelector("[data-producto-name]");
@@ -142,7 +142,7 @@ const udpateJson = () => {
   let password = document.querySelector("[data-producto-pass]").value;
   let rol = document.querySelector("[data-producto-rol]").value;
 
-  fetch(`https://json-server-db3.onrender.com/users/${tomarIDUrl()}`, {
+  fetch(`https://json-server-db4.onrender.com/users/${tomarIDUrl()}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
