@@ -10,6 +10,7 @@ const crearProducto = () => {
   let nombre = document.querySelector("[data-producto-name]").value;
   let apellido = document.querySelector("[data-producto-ape]").value;
   let edad = document.querySelector("[data-producto-precio]").value;
+  let correo = document.querySelector("[data-producto-correo]").value;
   let fotoPerfil = document.querySelector("[data-producto-url]").value;
   let categoria = document.querySelector("[data-select-seccion]").value;
   let descripcion = document.querySelector("[data-producto-descripcion]").value;
@@ -23,6 +24,7 @@ const crearProducto = () => {
       nombre,
       apellido,
       edad,
+      correo,
       fotoPerfil,
       descripcion,
       categoria,
@@ -105,6 +107,7 @@ const llenaDataInput = () => {
       let nombre = document.querySelector("[data-producto-name]");
       let edad = document.querySelector("[data-producto-precio]");
       let apellido = document.querySelector("[data-producto-ape]");
+      let correo = document.querySelector("[data-producto-correo]");
       let fotoPerfil = document.querySelector("[data-producto-url]");
       let categoria = document.querySelector("[data-select-seccion]");
       let descripcion = document.querySelector("[data-producto-descripcion]");
@@ -113,6 +116,7 @@ const llenaDataInput = () => {
       nombre.value = data.nombre;
       apellido.value = data.apellido;
       edad.value = data.edad;
+      correo.value = data.correo;
       fotoPerfil.value = data.fotoPerfil;
       descripcion.value = data.descripcion;
     });
@@ -123,6 +127,7 @@ const udpateJson = () => {
   let nombre = document.querySelector("[data-producto-name]").value;
   let apellido = document.querySelector("[data-producto-ape]").value;
   let edad = document.querySelector("[data-producto-precio]").value;
+  let correo = document.querySelector("[data-producto-correo]");
   let fotoPerfil = document.querySelector("[data-producto-url]").value;
   let categoria = document.querySelector("[data-select-seccion]").value;
   let descripcion = document.querySelector("[data-producto-descripcion]").value;
@@ -130,7 +135,7 @@ const udpateJson = () => {
   fetch(`https://json-server-db3.onrender.com/users/${tomarIDUrl()}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ nombre,apellido, edad, fotoPerfil, descripcion, categoria }),
+    body: JSON.stringify({ nombre,apellido, edad,correo, fotoPerfil, descripcion, categoria }),
   });
 };
 
@@ -155,8 +160,9 @@ botonAgregarProd.addEventListener("click", (e) => {
   let apellido = document.querySelector("[data-producto-ape]").value;
   let edad = document.querySelector("[data-producto-precio]").value;
   let fotoPerfil = document.querySelector("[data-producto-url]").value;
+  let correo = document.querySelector("[data-producto-correo]");
 
-  if (nombre!=""&&edad!=""&&fotoPerfil!=""&&apellido!="") {
+  if (nombre!=""&&edad!=""&&fotoPerfil!=""&&apellido!=""&&correo!="") {
     
   
   setTimeout(() => {

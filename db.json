@@ -6,8 +6,8 @@
       "apellido": "Castro",
       "fotoPerfil": "https://i.imgur.com/o2PN9v4.jpg",
       "edad": "30",
-      "correo": "guillermocastro@gmail.com",
-      "password": "guillermocastro123",
+      "correo": "admin@gmail.com",
+      "password": "admin123",
       "rol": "admin",
       "descripcion": "éste vaguito es el ADMIN",
       "categoria": "starwars"
