@@ -127,7 +127,7 @@ const udpateJson = () => {
   let nombre = document.querySelector("[data-producto-name]").value;
   let apellido = document.querySelector("[data-producto-ape]").value;
   let edad = document.querySelector("[data-producto-precio]").value;
-  let correo = document.querySelector("[data-producto-correo]");
+  let correo = document.querySelector("[data-producto-correo]").value;
   let fotoPerfil = document.querySelector("[data-producto-url]").value;
   let categoria = document.querySelector("[data-select-seccion]").value;
   let descripcion = document.querySelector("[data-producto-descripcion]").value;
@@ -160,7 +160,7 @@ botonAgregarProd.addEventListener("click", (e) => {
   let apellido = document.querySelector("[data-producto-ape]").value;
   let edad = document.querySelector("[data-producto-precio]").value;
   let fotoPerfil = document.querySelector("[data-producto-url]").value;
-  let correo = document.querySelector("[data-producto-correo]");
+  let correo = document.querySelector("[data-producto-correo]").value;
 
   if (nombre!=""&&edad!=""&&fotoPerfil!=""&&apellido!=""&&correo!="") {
     
