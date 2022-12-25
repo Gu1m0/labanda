@@ -135,7 +135,7 @@ fetch(`https://json-server-db3.onrender.com/users?categoria=${tomarSeccionUrl()}
        <div class="card-img">
         <img src="${el.fotoPerfil}" />
        </div>
-      <p class="p-productName">${el.nombre}</p>
+      <p class="p-productName">${el.nombre} ${el.apellido}</p>
        </div>
       <div class="precio-link">
         <p class="p-precio">Edad: ${el.edad}</p>
