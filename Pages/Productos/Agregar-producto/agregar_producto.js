@@ -27,7 +27,7 @@ const crearProducto = () => {
       correo,
       fotoPerfil,
       descripcion,
-      categoria,
+      categoria
     }),
   });
 };
@@ -135,7 +135,7 @@ const udpateJson = () => {
   fetch(`https://json-server-db3.onrender.com/users/${tomarIDUrl()}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ nombre,apellido, edad,correo, fotoPerfil, descripcion, categoria }),
+    body: JSON.stringify({nombre,apellido,edad,correo,fotoPerfil,descripcion,categoria}),
   });
 };
 
@@ -156,11 +156,11 @@ if (window.location.href.includes("id=")) {
 //-sino que cree un producto Nuevo en clck button
 botonAgregarProd.addEventListener("click", (e) => {
 
-  let nombre = document.querySelector("[data-producto-name]").value;
-  let apellido = document.querySelector("[data-producto-ape]").value;
-  let edad = document.querySelector("[data-producto-precio]").value;
-  let fotoPerfil = document.querySelector("[data-producto-url]").value;
-  let correo = document.querySelector("[data-producto-correo]").value;
+  // let nombre = document.querySelector("[data-producto-name]").value;
+  // let apellido = document.querySelector("[data-producto-ape]").value;
+  // let edad = document.querySelector("[data-producto-precio]").value;
+  // let fotoPerfil = document.querySelector("[data-producto-url]").value;
+  // let correo = document.querySelector("[data-producto-correo]").value;
 
   if (nombre!=""&&edad!=""&&fotoPerfil!=""&&apellido!=""&&correo!="") {
     
