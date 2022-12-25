@@ -31,7 +31,7 @@ const crearProducto = () => {
       password,
       rol,
       descripcion,
-      categoria,
+      categoria
     }),
   });
 };
@@ -154,7 +154,7 @@ const udpateJson = () => {
       password,
       rol,
       descripcion,
-      categoria,
+      categoria
     }),
   });
 };
@@ -184,7 +184,9 @@ if (window.location.href.includes("id=")) {
       edad != "" &&
       fotoPerfil != "" &&
       apellido != "" &&
-      correo != ""
+      correo != ""&&
+      password != ""&&
+      rol != ""
     ) {
       setTimeout(() => {
         crearProducto();
