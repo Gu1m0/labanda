@@ -14,6 +14,8 @@ const crearProducto = () => {
   let fotoPerfil = document.querySelector("[data-producto-url]").value;
   let categoria = document.querySelector("[data-select-seccion]").value;
   let descripcion = document.querySelector("[data-producto-descripcion]").value;
+  let password = document.querySelector("[data-producto-pass]").value;
+  let rol = document.querySelector("[data-producto-rol]").value;
   let id = crearID(20);
 
   fetch(`https://json-server-db3.onrender.com/users?categoria=${categoria}`, {
@@ -26,8 +28,10 @@ const crearProducto = () => {
       edad,
       correo,
       fotoPerfil,
+      password,
+      rol,
       descripcion,
-      categoria
+      categoria,
     }),
   });
 };
@@ -111,12 +115,16 @@ const llenaDataInput = () => {
       let fotoPerfil = document.querySelector("[data-producto-url]");
       let categoria = document.querySelector("[data-select-seccion]");
       let descripcion = document.querySelector("[data-producto-descripcion]");
+      let password = document.querySelector("[data-producto-pass]")
+      let rol = document.querySelector("[data-producto-rol]")
       // categoria.setAttribute("disabled", "true"); //deshabilita boton select category
       categoria.value = tomarSeccionUrl();
       nombre.value = data.nombre;
       apellido.value = data.apellido;
       edad.value = data.edad;
       correo.value = data.correo;
+      password.value = data.password;
+      rol.value = data.rol;
       fotoPerfil.value = data.fotoPerfil;
       descripcion.value = data.descripcion;
     });
@@ -131,11 +139,23 @@ const udpateJson = () => {
   let fotoPerfil = document.querySelector("[data-producto-url]").value;
   let categoria = document.querySelector("[data-select-seccion]").value;
   let descripcion = document.querySelector("[data-producto-descripcion]").value;
+  let password = document.querySelector("[data-producto-pass]").value;
+  let rol = document.querySelector("[data-producto-rol]").value;
 
   fetch(`https://json-server-db3.onrender.com/users/${tomarIDUrl()}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({nombre,apellido,edad,correo,fotoPerfil,descripcion,categoria}),
+    body: JSON.stringify({
+      nombre,
+      apellido,
+      edad,
+      correo,
+      fotoPerfil,
+      password,
+      rol,
+      descripcion,
+      categoria,
+    }),
   });
 };
 
@@ -147,34 +167,34 @@ if (window.location.href.includes("id=")) {
     udpateJson();
     swal("Usuario actualizado", "", "success");
     setTimeout(() => {
-      window.location.href =
-        "../Editar-producto/editar_producto.html";
+      window.location.href = "../Editar-producto/editar_producto.html";
     }, 2500);
   });
-  
 } else {
-//-sino que cree un producto Nuevo en clck button
-botonAgregarProd.addEventListener("click", (e) => {
+  //-sino que cree un producto Nuevo en clck button
+  botonAgregarProd.addEventListener("click", (e) => {
+    // let nombre = document.querySelector("[data-producto-name]").value;
+    // let apellido = document.querySelector("[data-producto-ape]").value;
+    // let edad = document.querySelector("[data-producto-precio]").value;
+    // let fotoPerfil = document.querySelector("[data-producto-url]").value;
+    // let correo = document.querySelector("[data-producto-correo]").value;
 
-  // let nombre = document.querySelector("[data-producto-name]").value;
-  // let apellido = document.querySelector("[data-producto-ape]").value;
-  // let edad = document.querySelector("[data-producto-precio]").value;
-  // let fotoPerfil = document.querySelector("[data-producto-url]").value;
-  // let correo = document.querySelector("[data-producto-correo]").value;
-
-  if (nombre!=""&&edad!=""&&fotoPerfil!=""&&apellido!=""&&correo!="") {
-    
-  
-  setTimeout(() => {
-    crearProducto();
-  }, 1500);
-  swal("Usuario agregado correctamente", "", "success");
-}else
-  swal(
-    "Usuario no agregado",
-    "Debes rellenar los campos faltantes",
-    "error"
-  );
-
-});
+    if (
+      nombre != "" &&
+      edad != "" &&
+      fotoPerfil != "" &&
+      apellido != "" &&
+      correo != ""
+    ) {
+      setTimeout(() => {
+        crearProducto();
+      }, 1500);
+      swal("Usuario agregado correctamente", "", "success");
+    } else
+      swal(
+        "Usuario no agregado",
+        "Debes rellenar los campos faltantes",
+        "error"
+      );
+  });
 }

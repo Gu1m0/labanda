@@ -81,6 +81,18 @@
               <label for="prod-correo">Correo del usuario</label>
               <input type="text" name="" id="prod-correo" placeholder="username@correo.com" required  data-producto-correo>
           </div>
+          <div class="pass-prod">
+            <label for="prod-pass">Contraseña del usuario</label>
+            <input type="password" name="" id="prod-pass" placeholder="password" required disabled data-producto-pass>
+        </div>
+        <div class="rol-prod">
+          <label for="prod-rol">Rol del usuario</label>
+          <select name="" id="prod-rol" data-producto-rol required>
+            <option value="user" selected>User</option>
+            <option value="team member">Team Member</option>
+            <option value="admin">Admin</option>
+           </select>
+      </div>
             <div class="descrip-prod">
                 <textarea name="" id="" cols="30" rows="3" placeholder="Descripción del usuario" required data-producto-descripcion></textarea >
             </div>
